@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@klaytn/contracts/KIP/interfaces/IKIP13.sol";
-import "@klaytn/contracts/KIP/interfaces/IKIP7Metadata.sol";
+import "@kaiachain/contracts/KIP/interfaces/IKIP13.sol";
+import "@kaiachain/contracts/KIP/interfaces/IKIP7Metadata.sol";
 
 interface IDexKIP7 is IKIP7Metadata, IKIP13{
 

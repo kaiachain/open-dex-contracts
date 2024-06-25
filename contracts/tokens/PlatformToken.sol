@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity =0.8.12;
 
-import "@klaytn/contracts/KIP/token/KIP7/extensions/KIP7Votes.sol";
-import "@klaytn/contracts/KIP/access/KAccessControl.sol";
+import "@kaiachain/contracts/KIP/token/KIP7/extensions/KIP7Votes.sol";
+import "@kaiachain/contracts/KIP/access/KAccessControl.sol";
 import '../interfaces/IPlatformToken.sol';
 
 contract PlatformToken is KAccessControl, KIP7Votes, IPlatformToken {

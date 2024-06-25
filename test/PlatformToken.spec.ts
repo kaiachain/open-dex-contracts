@@ -37,7 +37,7 @@ describe('PlatformToken', () => {
   });
 
   it('supportInterface', async () => {
-    // KIP-13 Identifiers can be found https://kips.klaytn.foundation/KIPs/kip-7
+    // KIP-13 Identifiers can be found https://kips.kaia.io/KIPs/kip-7
     expect(await token.supportsInterface('0x65787371')).to.eq(true); // 0x65787371 is IKIP7 interfaceID
     expect(await token.supportsInterface('0xa219a025')).to.eq(true); // 0xa219a025 is IKIP7Metadata interfaceID
     expect(await token.supportsInterface('0xe90b74c5')).to.eq(true); // 0xe90b74c5 is IPlatformToken interfaceID

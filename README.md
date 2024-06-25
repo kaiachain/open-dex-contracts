@@ -1,14 +1,6 @@
-[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+# Kaia Open DEX Contracts
 
-# NO LONGER MAINTAINED
-
-Since the launch of Kaia Blockchain this repository has been parked in favour of the new open-source projects in [Kaia's Github](https://github.com/kaiachain). Contributors have now moved there continuing with massive open-source contributions to our blockchain ecosystem. A big thank you to everyone who has contributed to this repository. For more information about Klaytn's chain merge with Finschia blockchain please refer to the launching of Kaia blockchain - [kaia.io](http://kaia.io/).
-
----
-
-# Klaytn-DEX Project
-
-Open-source DEX for Klaytn. This repository is for smart-contracts part of DEX.
+Open-source DEX for Kaia. This repository is for smart-contracts part of DEX.
 
 ## Deploy
 Before deployment, please, set up all required parameters in your .env file described in the .env.example.
@@ -21,11 +13,11 @@ npx hardhat run scripts/deployDEX.ts --network `network`
 command with the specified `network` argument. In case of hardhat network deployment, there is no need to provide any additional parameters. 
 The `network` should be configured in your hardhat.config.ts file in HardhatUserConfig.networks section. Please, refer to the [Hardhat Networks Configuration](`https://hardhat.org/hardhat-runner/docs/config#networks-configuration`) guide for more information. Currently, the following networks are already configured:
 - hardhat (default)
-- baobab (Klaytn Baobab Testnet)
+- kairos (Kaia Kairos Testnet)
 
 Example:
 ```bash 
-npx hardhat run scripts/deployDEX.ts --network baobab
+npx hardhat run scripts/deployDEX.ts --network kairos
 ```
 Example (default hardhat network):
 ```bash 
@@ -46,7 +38,7 @@ services:
       - ./.env:/app/.env
       - ./deployments:/app/deployments
     environment:
-      DEX_NETWORK_NAME: baobab
+      DEX_NETWORK_NAME: kairos
 ```
 
 ```bash
@@ -75,11 +67,11 @@ to simulate the deployment process to the forked network.
 
 ## Documentation
 
-The repository contains Klaytn-DEX specification and audit reports ([learn more](./docs/README.md)).
+The repository contains Kaia DEX specification and audit reports ([learn more](./docs/README.md)).
 
-## Want to Contribute to Klaytn DEX Contracts? <a id="want-to-contribute"></a>
+## Want to Contribute to Kaia Open DEX Contracts? <a id="want-to-contribute"></a>
 
-In line with our commitment to decentralization, all Klaytn codebase and its documentations are completely open source. Klaytn always welcomes your contribution. Anyone can view, edit, fix its contents and make suggestions. You can either create a pull request on GitHub or create a enhancement request. Make sure to check our [Contributor License Agreement (CLA)](https://gist.github.com/e78f99e1c527225637e269cff1bc7e49) first and there are also a few guidelines our contributors would check out before contributing:
+In line with our commitment to decentralization, all Kaia codebase and its documentations are completely open source. Kaia always welcomes your contribution. Anyone can view, edit, fix its contents and make suggestions. You can either create a pull request on GitHub or create a enhancement request. Make sure to check our [Contributor License Agreement (CLA)](https://gist.github.com/kaiachain-dev/bbf65cc330275c057463c4c94ce787a6) first and there are also a few guidelines our contributors would check out before contributing:
 
 - [Contribution Guide](./CONTRIBUTING.md)
 - [License](./LICENSE)

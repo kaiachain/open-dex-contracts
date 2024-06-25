@@ -1,6 +1,6 @@
 {
-  "name": "@klaytn/dex-contracts",
-  "description": "This repository is for smart-contracts part of klaytn's opensource DEX.",
+  "name": "@kaiachain/open-dex-contracts",
+  "description": "This repository is for smart-contracts part of kaia's opensource DEX.",
   "version": "0.0.1",
   "scripts": {
     "compile": "hardhat compile",
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/klaytn/klaytn-dex-contracts.git"
+    "url": "https://github.com/kaiachain/open-dex-contracts.git"
   },
   "keywords": [
     "solidity",
@@ -29,17 +29,17 @@
     "smart",
     "contracts",
     "security",
-    "klaytn",
+    "kaia",
     "dex"
   ],
-  "author": "Klaytn Community <developer@klaytn.foundation>",
+  "author": "Kaia Community <developer@kaia.io>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/klaytn/klaytn-dex-contracts/issues"
+    "url": "https://github.com/kaiachain/open-dex-contracts/issues"
   },
-  "homepage": "https://github.com/klaytn/klaytn-dex-contracts#readme",
+  "homepage": "https://github.com/kaiachain/open-dex-contracts#readme",
   "devDependencies": {
-    "@klaytn/contracts": "^1.0.4",
+    "@kaiachain/contracts": "^1.0.0",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.2",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.3",
     "@nomiclabs/hardhat-ethers": "^2.0.6",
