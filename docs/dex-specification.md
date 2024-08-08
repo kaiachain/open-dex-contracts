@@ -7,7 +7,7 @@ linkcolor: #e3232c
 
 -->
 
-# Klaytn-DEX Specification<!-- omit in toc -->
+# Kaia-DEX Specification<!-- omit in toc -->
 
 <!-- start intro: only for github, remove if creating a pdf -->
 
@@ -103,7 +103,7 @@ Dex is an automated liquidity protocol powered by a [constant product formula](#
 
 ### DEX platform
 
-DEX platform combines [Dex protocol](#dex), which is a system of non-upgradeable smart contracts implemented for the Klaytn blockchain, with other smart contracts, e.g. farming and staking.
+DEX platform combines [Dex protocol](#dex), which is a system of non-upgradeable smart contracts implemented for the Kaia blockchain, with other smart contracts, e.g. farming and staking.
 
 ### Constant Product Formula
 
@@ -125,7 +125,7 @@ Note that deflationary tokens and tokens with commission on transfer are not sup
 
 #### KIP7
 
-[KIP7](https://kips.klaytn.foundation/KIPs/kip-7) is a fungible token standard for Klaytn. Dex supports all standard KIP7 implementations.
+[KIP7](https://kips.kaia.io/KIPs/kip-7) is a fungible token standard for Kaia. Dex supports all standard KIP7 implementations.
 
 ### Factory
 
