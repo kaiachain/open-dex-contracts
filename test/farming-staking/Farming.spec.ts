@@ -169,7 +169,7 @@ describe('Farming', () => {
       .to.be.revertedWith('withdraw: not good');
   });
 
-  it('withdraw:fail, pool does not exsist', async () => {
+  it('withdraw:fail, pool does not exist', async () => {
     // Attempt to withdraw from a pool when there are no pools at all
     await expect(farming.connect(alice).withdraw(0, '0')).to.be.revertedWith('Pool does not exist');
     // Adding the fist pool with id 0
@@ -180,7 +180,7 @@ describe('Farming', () => {
     await expect(farming.connect(alice).withdraw(1, '0')).to.be.revertedWith('Pool does not exist');
   });
 
-  it('deposit:fail, pool does not exsist', async () => {
+  it('deposit:fail, pool does not exist', async () => {
     // Attempt to deposit to a pool when there are no pools at all
     await expect(farming.connect(alice).deposit(0, '0')).to.be.revertedWith('Pool does not exist');
     // Adding the fist pool with id 0
@@ -225,7 +225,7 @@ describe('Farming', () => {
     await farming.connect(bob).withdraw(0, '100');
   });
 
-  it('updateMultiplier:fail, pool does not exsist', async () => {
+  it('updateMultiplier:fail, pool does not exist', async () => {
     // Attempt to updateMultiplier to a pool when there are no pools at all
     await expect(farming.updateMultiplier(0, 0)).to.be.revertedWith('Pool does not exist');
     // Adding the fist pool with id 0
@@ -234,7 +234,7 @@ describe('Farming', () => {
     await expect(farming.updateMultiplier(1, 0)).to.be.revertedWith('Pool does not exist');
   });
 
-  it('set:fail, pool does not exsist', async () => {
+  it('set:fail, pool does not exist', async () => {
     // Attempt to set an allocation point to a pool when there are no pools at all
     await expect(farming.set(0, 1000)).to.be.revertedWith('Pool does not exist');
     // Adding the fist pool with id 0
@@ -258,7 +258,7 @@ describe('Farming', () => {
     await expect(farming.set(1, 0)).to.be.revertedWith('Should be more than zero');
   });
 
-  it('pendingPtn:fail, pool does not exsist', async () => {
+  it('pendingPtn:fail, pool does not exist', async () => {
     // Attempt to get pendingPtn from a pool when there are no pools at all
     await expect(farming.pendingPtn(0, alice.address)).to.be.revertedWith('Pool does not exist');
     // Adding the fist pool with id 0
@@ -309,7 +309,7 @@ describe('Farming', () => {
       expect(await lp1.balanceOf(bob.address)).to.equal('2000');
     });
 
-    it('emergency withdraw: fail, pool does not exsist', async () => {
+    it('emergency withdraw: fail, pool does not exist', async () => {
       blockNumber = await ethers.provider.getBlockNumber();
       // 100 per block farming rate starting at block `blockNumber + 100`
       // with bonus until block 1000

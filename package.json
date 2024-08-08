@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/kaiachain/open-dex-contracts#readme",
   "devDependencies": {
-    "@kaiachain/contracts": "^1.0.1",
+    "@klaytn/contracts": "^1.0.4",
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.2",
     "@nomicfoundation/hardhat-network-helpers": "^1.0.3",
     "@nomiclabs/hardhat-ethers": "^2.0.6",

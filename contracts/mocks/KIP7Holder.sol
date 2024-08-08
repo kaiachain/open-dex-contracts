@@ -4,7 +4,7 @@
 // https://github.com/OpenZeppelin/openzeppelin-contracts/releases/tag/v4.5.0
 
 pragma solidity 0.8.12;
-import "@kaiachain/contracts/KIP/token/KIP7/IKIP7Receiver.sol";
+import "@klaytn/contracts/KIP/token/KIP7/IKIP7Receiver.sol";
 
 contract KIP7Holder is IKIP7Receiver {
     /**
