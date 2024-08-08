@@ -57,8 +57,8 @@ const config: HardhatUserConfig = {
         url: process.env.FORKING_URL as string,
       },
     },
-    baobab: {
-      url: 'https://api.baobab.klaytn.net:8651/',
+    kairos: {
+      url: 'https://public-en.kairos.node.kaia.io',
       accounts: { mnemonic, initialIndex: 0 },
       chainId: 1001,
       gas: 8500000,

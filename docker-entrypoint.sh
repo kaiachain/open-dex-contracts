@@ -12,7 +12,7 @@ if [ ! -f "/app/.env" ] ; then
 fi
 
 if [ -z $DEX_NETWORK_NAME ] ; then
-        echo "Please set DEX_NETWORK_NAME; baobab, cypress"
+        echo "Please set DEX_NETWORK_NAME; kairos, mainnet"
         
         exit 1
 fi

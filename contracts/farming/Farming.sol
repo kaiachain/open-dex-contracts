@@ -3,9 +3,9 @@ pragma solidity =0.8.12;
 
 import "../interfaces/IPlatformToken.sol";
 import "../libraries/TransferHelper.sol";
-import "@klaytn/contracts/access/Ownable.sol";
-import "@klaytn/contracts/utils/math/SafeCast.sol";
-import "@klaytn/contracts/security/ReentrancyGuard.sol";
+import "@kaiachain/contracts/access/Ownable.sol";
+import "@kaiachain/contracts/utils/math/SafeCast.sol";
+import "@kaiachain/contracts/security/ReentrancyGuard.sol";
 
 contract Farming is Ownable, ReentrancyGuard {
     // Info of each user.

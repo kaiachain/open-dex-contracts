@@ -2,9 +2,9 @@
 pragma solidity =0.8.12;
 
 import '../interfaces/IDexKIP7.sol';
-import "@klaytn/contracts/KIP/interfaces/IKIP7Receiver.sol";
-import '@klaytn/contracts/utils/Address.sol';
-import '@klaytn/contracts/KIP/utils/introspection/KIP13.sol';
+import "@kaiachain/contracts/KIP/interfaces/IKIP7Receiver.sol";
+import '@kaiachain/contracts/utils/Address.sol';
+import '@kaiachain/contracts/KIP/utils/introspection/KIP13.sol';
 
 contract DexKIP7 is IDexKIP7, KIP13 {
     using Address for address;

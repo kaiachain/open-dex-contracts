@@ -5,7 +5,7 @@ import "../libraries/DexLibrary.sol";
 import "../libraries/TransferHelper.sol";
 import "../interfaces/IDexRouter.sol";
 import "../interfaces/IDexFactory.sol";
-import "@klaytn/contracts/KIP/interfaces/IKIP7.sol";
+import "@kaiachain/contracts/KIP/interfaces/IKIP7.sol";
 import "../interfaces/IWKLAY.sol";
 import "./Errors.sol";
 

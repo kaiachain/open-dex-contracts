@@ -30,7 +30,7 @@ async function main() {
 
   // Deploy Dex Token
   const dexToken = await ethers.getContractFactory('PlatformToken');
-  const dexTokenInstance = await dexToken.deploy('Klaytn DEX', 'KDEX', multisigInstance.address);
+  const dexTokenInstance = await dexToken.deploy('Kaia DEX', 'KDEX', multisigInstance.address);
   await dexTokenInstance.deployed();
 
   console.log(`Token deployed to : ${dexTokenInstance.address}`);

@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity =0.8.12;
 
-import "@klaytn/contracts/access/Ownable.sol";
-import "@klaytn/contracts/security/ReentrancyGuard.sol";
-import "@klaytn/contracts/KIP/interfaces/IKIP7Metadata.sol";
+import "@kaiachain/contracts/access/Ownable.sol";
+import "@kaiachain/contracts/security/ReentrancyGuard.sol";
+import "@kaiachain/contracts/KIP/interfaces/IKIP7Metadata.sol";
 import "../libraries/TransferHelper.sol";
-import "@klaytn/contracts/utils/math/SafeCast.sol";
+import "@kaiachain/contracts/utils/math/SafeCast.sol";
 
 contract StakingInitializable is Ownable, ReentrancyGuard {
     using SafeCast for uint256;
